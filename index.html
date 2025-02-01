@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+      color: #333;
+      transition: background-color 0.5s, color 0.5s;
+    }
+    .resume {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 1.8em;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    p {
+      line-height: 1.6;
+    }
+    .contact-info {
+      margin-bottom: 20px;
+    }
+    .contact-info p {
+      margin: 5px 0;
+    }
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      color: #fff;
+      background-color: #007BFF;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 20px;
+      object-fit: cover;
+      border: 4px solid #007BFF;
+    }
+  </style>
+</head>
+<body>
+  <div class="resume">
+    <!-- Profile Image -->
+    <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-img">
+    <h1>John Doe</h1>
+    <div class="contact-info">
+      <p>Email: john.doe@example.com</p>
+      <p>Phone: (123) 456-7890</p>
+      <p>LinkedIn: linkedin.com/in/johndoe</p>
+    </div>
+    <h2>Summary</h2>
+    <p>Experienced software developer with a passion for building scalable web applications and solving complex problems. Proficient in JavaScript, Python, and modern web technologies.</p>
+    <h2>Experience</h2>
+    <p><strong>Senior Software Engineer</strong> - ABC Corp (Jan 2020 - Present)</p>
+    <ul>
+      <li>Developed and maintained web applications using React and Node.js.</li>
+      <li>Led a team of 5 developers to deliver projects on time.</li>
+    </ul>
+    <p><strong>Software Engineer</strong> - XYZ Inc (Jun 2016 - Dec 2019)</p>
+    <ul>
+      <li>Collaborated on the development of a cloud-based SaaS platform.</li>
+      <li>Implemented RESTful APIs and integrated third-party services.</li>
+    </ul>
+    <h2>Education</h2>
+    <p><strong>Bachelor of Science in Computer Science</strong> - University of Tech (2012 - 2016)</p>
+    <div class="button-container">
+      <button onclick="changeColor()">Change Color</button>
+    </div>
+  </div>
+
+  <script>
+    function changeColor() {
+      const body = document.body;
+      const resume = document.querySelector('.resume');
+      if (body.style.backgroundColor === 'rgb(244, 244, 244)') {
+        body.style.backgroundColor = '#333';
+        body.style.color = '#fff';
+        resume.style.backgroundColor = '#444';
+        resume.style.color = '#fff';
+      } else {
+        body.style.backgroundColor = '#f4f4f4';
+        body.style.color = '#333';
+        resume.style.backgroundColor = '#fff';
+        resume.style.color = '#333';
+      }
+    }
+  </script>
+</body>
+</html>
